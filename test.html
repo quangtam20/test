@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width",initial-scale=1.0">
+  <title>JS Bin</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    //<![CDATA[
+    function display(Name, Number, Weight, Freeze, Height, Melt,Tam, linkToWeb) {
+      document.table.name.value = Name;
+      document.table.number.value = Number;
+      document.table.weight.value = Weight;
+    //   document.table.freeze.value = Freeze;
+      document.table.height.value = Height;
+      document.getElementById("img").src = Melt
+      document.getElementById("audio").src = Tam
+      document.getElementById("linkToWeb").href = linkToWeb
+      console.log("log: ", Tam);
+
+    }
+//]]>
+  </script>
+
+  <style type="text/css">
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    .text-red{
+        color: red;
+        font-size: 13px;
+    }
+  </style>
+
+  <Center>
+    <h2>Bảng nguyên tố hóa học</h2>
+    <form>
+      <table cellspacing=2.5 cellpadding=5 width=500>
+        <!-- <tr>
+        </tr>      
+         
+        <td colspan="1"></td>
+         <td align=center>
+            <font color="red" size="1">IA</font>
+            
+            <tr>
+                <td colspan="2"></td>
+                <td align=center>
+                <font color="red" size="1">IIA</font>
+            </tr>
+            <tr>   
+                <td colspan="3"></td>
+                <td align=center>
+                    <font color="red" size="1">IIIB</font>
+                <td align=center>
+             <font color="red" size="1">IVB</font>
+         <td align=center>
+          <font color="red" size="1">VB</font>
+          <td align=center>
+            <font color="red" size="1">VIB</font>
+          <td align=center>
+          <font color="red" size="1">VIIB</font>
+          <td colspan="1"></td>
+          <td align=center>
+          <font color="red" size="1">VIIIB</font>
+          <td colspan="1"></td>
+          <td align=center>
+          <font color="red" size="1">IB</font>
+         <td align=center>
+          <font color="red" size="1">IIB</font>
+         <td align=center>
+          <font color="red" size="1">IIIA</font>
+         <td align=center>
+          <font color="red" size="1">IVA</font>
+         <td align=center>
+          <font color="red" size="1">VA</font>
+         <td align=center>
+          <font color="red" size="1">VIA</font>
+         <td align=center>
+          <font color="red" size="1">VIIA</font>
+         </tr>
+         <td colspan="18"></td>
+         <td align=center>
+          <font color="red" size="1">VIIIA</font>                                          
+    
+            </td>
+        </tr>    -->
+
+        <tr>
+            <td></td>
+            <td class="text-red">IA</td>
+            <td colspan="16"></td>
+            <td class="text-red">VIIIA</td>
+        </tr>
+            
+        <td align=center>
+          <font color="red" size="2">1</font>
+        </td>
+        <td align=center bgcolor="#FFFF99"
+          onclick="display('Hydrogen','1','1.0079','-259.14C','1s¹','./img-test/3.jfif', './amthanh/test1.aac', 'https://dantri.com.vn/')">H</td>
+          <td class="text-red">IIA</td>
+          <td colspan="10"></td>
+          <td class="text-red">IIIA</td>
+        <td class="text-red">IVA</td>
+        <td class="text-red">VA</td>
+        <td class="text-red">VIA</td>
+        <td class="text-red">VIIA</td>
+        <td align=center bgcolor="#FF6A6A"><a
+            href="javascript:display('Helium','2','4.0026','-272C @ 26ATM','-268.6C','./img-test/4.jfif', './amthanh/test.mp3');">He</a></td>
+        </tr>
+        <tr>
+          <td align=center>
+            <font color="red" size="2">2</font>
+          </td>
+          <td align=center bgcolor="#E8D3E3"><a
+              href="javascript:display('Lithium','3','6.94','180.54 C','[He]2s¹','./img-test/5.jfif');">Li</a></td>
+          <td align=center bgcolor="#B0E2FF"><a
+              href="javascript:display('Beryllium','4','9.01218','1278 C','[He]2s²','./img-test/6.jfif');">Be</a></td>
+          <td colspan="10"></td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Boron','5','10.81','2300 C','[He]2s²2p¹','./img-test/7.jfif');">B</a></td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Carbon','6','12.011','3500 C','[He]2s²2p²','./img-test/8.jfif');">C</a></td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Nitrogen','7','14.0067','-209.9 C','[He]2s²2p³','./img-test/9.jfif','./amthanh/7.m4a');">N</a></td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Oxygen','8','15.9994','-218.4 C','[He]2s²2p⁴','./img-test/10.jfif');">O</a></td>
+          <td align=center bgcolor="#FFA07A"><a
+              href="javascript:display('Flourine','9','18.998403','-219.62 C','[He]2s²2p⁵','./img-test/11.jfif');">F</a></td>
+          <td align=center bgcolor="#FF6A6A"><a
+              href="javascript:display('Neon','10','20.17','-248.6 C','[He]2s²2p⁶','./img-test/12.jfif');">Ne</a></td>
+        </tr>
+        <tr>
+          <td align=center>
+            <font color="red" size="2">3</font>
+          </td>
+          <td align=center bgcolor="#E8D3E3"><a
+              href="javascript:display('Sodium','11','22.98977','97.8 C','[Ne]3s¹','./img-test/13.jfif','./amthanh/11.m4a');">Na</a></td>
+          <td align=center bgcolor="#B0E2FF"><a
+              href="javascript:display('Magnesium','12','24.305','638.8 C','[Ne]3s²','./img-test/14.jfif');">Mg</a>
+            </td>
+            <td class="text-red" >IIIB</td>
+            <td class="text-red">IVB</td>
+            <td class="text-red">VB</td>
+            <td class="text-red">VIB</td>
+            <td class="text-red">VIIB</td>
+            <td colspan="3" style="text-align: center;" class="text-red">VIIIB</td>
+            <td class="text-red">IB</td>
+            <td class="text-red">IIB</td>
+          <!-- <td colspan="7"></td> -->
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Aluminum','13','26.98154','660.37 C','[Ne]3s²3p¹','./img-test/15.jfif');">Al</a></td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Silicon','14','28.0855','1410 C','[Ne]3s²3p²','./img-test/16.jfif');">Si</a></td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Phosphorous','15','30.97376','44.1 C','[Ne]3s²3p³','./img-test/17.jfif','./amthanh/15.m4a');">P</a></td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Sulfur','16','32.06','112.8 C','[Ne]3s²3p⁴','./img-test/18.jfif');">S</a></td>
+          <td align=center bgcolor="#FFA07A"><a
+              href="javascript:display('Chlorine','17','35.453','-100.98 C','[Ne]3s²3p⁵','./img-test/19.jfif');">Cl</a></td>
+          <td align=center bgcolor="#FF6A6A"><a
+              href="javascript:display('Argon','18','39.948','-189.3 C','[Ne]3s²3p⁶','./img-test/20.jfif');">Ar</a></td>
+        </tr>
+        <tr>
+          <td align=center>
+            <font color="red" size="2">4</font>
+          </td>
+          <td align=center bgcolor="#E8D3E3"><a
+              href="javascript:display('Potassium','19','39.0983','63.65 C','[Ar]4s¹','./img-test/21.jfif','./amthanh/19.m4a');">K</a></td>
+          <td align=center bgcolor="#B0E2FF"><a
+              href="javascript:display('Calcium','20','40.08','839 C','[Ar]4s²','./img-test/22.jfif');">Ca</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Scandium','21','44.9559','1539 C','[Ar]3d¹4s²','./img-test/23.jfif','./amthanh/21.m4a');">Sc</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Titanium','22','47.90','1660 C','[Ar]3d²4s²img-test/24.jfif');">Ti</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Vanadium','23','50.9415','1890±10 C','[Ar]3d³4s²','./img-test/25.jfif','./amthanh/23.m4a');">V</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Chromium','24','51.996','1857 C','[Ar]3d⁵4s¹','./img-test/26.jfif');">Cr</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Manganese','25','54.9380','1245 C','[Ar]3d⁵4s²','./img-test/27.jfif','./amthanh/25.m4a');">Mn</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Iron','26','55.847','1535 C','[Ar]3d⁶4s²','./img-test/28.jfif');">Fe</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Cobalt','27','58.9332','1495 C','[Ar]3d⁷4s²','./img-test/29.jfif','./amthanh/27.m4a');">Co</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Nickel','28','58.71','1453 C','[Ar]3d⁸4s²','./img-test/30.jfif');">Ni</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Copper','29','63.546','1803 C','[Ar]3d¹⁰4s¹','./img-test/31.jfif');">Cu</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Zinc','30','65.38','419.58 C','[Ar]3d¹⁰4s²','./img-test/32.jfif');">Zn</a></td>
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Gallium','31','69.735','29.78 C','[Ar]3d¹⁰4s²4p¹','./img-test/33.jfif','./amthanh/31.m4a');">Ga</a></td>
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Germanium','32','72.59','937.4 C','[Ar]3d¹⁰4s²4p²','./img-test/34.jfif');">Ge</a></td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Arsenic','33','74.9216','81 C @ 28ATM','[Ar]3d¹⁰4s²4p³','./img-test/35.jfif')">As</a>
+          </td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Selenium','34','78.96','217 C','[Ar]3d¹⁰4s²4p⁴','./img-test/36.jfif');">Se</a></td>
+          <td align=center bgcolor="#FFA07A"><a
+              href="javascript:display('Bromine','35','79.904','-7.2 C','58.78 C','[Ar]3d¹⁰4s²4p⁵','./img-test/37.jfif');">Br</a></td>
+          <td align=center bgcolor="#FF6A6A"><a
+              href="javascript:display('Krypton','36','83.80','-157.2 C','[Ar]3d¹⁰4s²4p⁶','./img-test/38.jfif');">Kr</a></td>
+        </tr>
+        <tr>
+          <td align=center>
+            <font color="red" size="2">5</font>
+          </td>
+          <td align=center bgcolor="#E8D3E3"><a
+              href="javascript:display('Rubidium','37','85.467','38.89 C','[Kr]5s¹','./img-test/39.jfif');">Rb</a></td>
+          <td align=center bgcolor="#B0E2FF"><a
+              href="javascript:display('Strontium','38','87.62','769 C','[Kr]5s²','./img-test/40.jfif');">Sr</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Yttrium','39','88.9059','1523 C','[Kr]4d¹5s²','./img-test/41.jfif','./amthanh/39.m4a');">Y</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Zirconium','40','91.22','1852±2 C','[Kr]4d²5s²','./img-test/42.jfif');">Zr</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Niobium','41','92.9064','2468±10 C','[Kr]4d⁴5s¹','./img-test/43.jfif','./amthanh/41.m4a');">Nb</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Molybdenum','42','95.94','2617 C','[Kr]4d⁵5s¹','./img-test/44.jfif');">Mo</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Technetium','43','98.9062','2200±50 C','[Kr]4d⁵5s²','./img-test/45.jfif','./amthanh/43.m4a');">Tc</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Ruthenium','44','101.07','2250 C','[Kr]4d⁷5s¹','./img-test/46.jfif');">Ru</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Rhodium','45','102.9055','1966±3 C','[Kr]4d⁸5s¹','./img-test/47.jfif','./amthanh/45.m4a');">Rh</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Palladium','46','106.4','1552 C','[Kr]4d¹⁰','./img-test/48.jfif');">Pd</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Silver','47','107.868','961.93 C','[Kr]4d¹⁰5s¹','./img-test/49.jfif');">Ag</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Cadmium','48','112.41','320.9 C','[Kr]4d¹⁰5s²','./img-test/50.jfif');">Cd</a></td>
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Indium','49','114.82','156.61 C','[Kr]4d¹⁰5s²5p¹','./img-test/51.jfif','./amthanh/49.m4a');">In</a></td>
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Tin','50','118.69','231.9 C','[Kr]4d¹⁰5s²5p²','./img-test/52.jfif');">Sn</a></td>
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Antimony','51','121.75','630 C','[Kr]4d¹⁰5s²5p³','./img-test/53.jfif','./amthanh/51.m4a');">Sb</a></td>
+          <td align=center bgcolor="#FFFF99"><a
+              href="javascript:display('Tellurium','52','127.60','449.5 C','[Kr]4d¹⁰5s²5p⁴','./img-test/54.jfif');">Te</a></td>
+          <td align=center bgcolor="#FFA07A"><a
+              href="javascript:display('Iodine','53','126.9045','113.5 C','[Kr]4d¹⁰5s²5p⁵','./img-test/55.jfif','./amthanh/53.m4a')">I</a></td>
+          <td align=center bgcolor="#FF6A6A"><a
+              href="javascript:display('Xenon','54','131.30','-111.9 C','[Kr]4d¹⁰5s²5p⁶','./img-test/56.jfif');">Xe</a></td>
+        </tr>
+        <tr>
+          <td align=center>
+            <font color="red" size="2">6</font>
+          </td>
+          <td align=center bgcolor="#E8D3E3"><a
+              href="javascript:display('Cesium','55','132.9054','28.5 C','[Xe]6s¹','./img-test/57.jfif');">Cs</a></td>
+          <td align=center bgcolor="#B0E2FF"><a
+              href="javascript:display('Barium','56','137.33','725 C','[Xe]6s²','./img-test/58.jfif');">Ba</a></td>
+          <td align=center bgcolor="#AEEEEE"><a
+              href="javascript:display('Lanthanum','57','138.9055','920 C','[Xe]5d¹6s²','./img-test/59.jfif','./amthanh/57.m4a');">*La</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Hafnium','72','178.49','2150 C','[Xe]4f¹⁴5d²6s²','./img-test/60.jfif');">Hf</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Tantalum','73','180.947','2996 C','[Xe]4f¹⁴5d³6s²','./img-test/61.jfif','./amthanh/73.m4a');">Ta</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Tungsten','74','183.85','3410±20 C','[Xe]4f¹⁴5d⁴6s²','./img-test/62.jfif');">W</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Rhenium','75','186.207','3180 C','[Xe]4f¹⁴5d⁵6s²','./img-test/63.jfif','./amthanh/75.m4a');">Re</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Osmium','76','190.2','3045 C','5027 C','[Xe]4f¹⁴5d⁶6s²','./img-test/64.jfif');">Os</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Iridium','77','192.22','2410 C','[Xe]4f¹⁴5d⁷6s²','./img-test/65.jfif');">Ir</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Platinum','78','195.09','1772 C','[Xe]4f¹⁴5d⁹6s¹','./img-test/66.jfif');">Pt</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Gold','79','196.9665','1064.43 C','[Xe]4f¹⁴5d¹⁰6s¹','./img-test/67.jfif');">Au</a></td>
+          <td align=center bgcolor="#98D0B9"><a
+              href="javascript:display('Mercury','80','200.59','-38.87 C','[Xe]4f¹⁴5d¹⁰6s²','./img-test/68.jfif');">Hg</a></td>
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Thallium','81','204.37','303.5 C','[Xe]4f¹⁴5d¹⁰6s²6p¹','./img-test/69.jfif','./amthanh/81.m4a');">Tl</a>
+          </td>
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Lead','82','207.2','327.5 C','[Xe]4f¹⁴5d¹⁰6s²6p²','./img-test/70.jfif');">Pb</a></td>
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Bismuth','83','208.9804','271.3 C','[Xe]4f¹⁴5d¹⁰6s²6p³','./img-test/71.jfif','./amthanh/83.m4a');">Bi</a></td>
+          <td align=center bgcolor="#C8E2B1"><a
+              href="javascript:display('Polonium','84','(209)','254 C','[Xe]4f¹⁴5d¹⁰6s²6p⁴','./img-test/72.jfif');">Po</a></td>
+          <td align=center bgcolor="#FFA07A"><a
+              href="javascript:display('Astatine','85','(210)','302 C','[Xe]4f¹⁴5d¹⁰6s²6p⁵','./img-test/73.jfif','./amthanh/85.m4a');">At</a></td>
+          <td align=center bgcolor="#FF6A6A"><a
+              href="javascript:display('Radon','86','(222)','-71 C\t','[Xe]4f¹⁴5d¹⁰6s²6p⁶','./img-test/74.jfif');">Rn</a></td>
+        </tr>
+        <tr>
+          <td align=center>
+            <font color="red" size="2">7</font>
+          </td>
+          <td align=center bgcolor="#E8D3E3"><a
+              href="javascript:display('Francium','87','(223)','27 C\t','[Rn]7s¹','./img-test/75.jfif','./amthanh/87.m4a');">Fr</a></td>
+          <td align=center bgcolor="#B0E2FF"><a
+              href="javascript:display('Radium','88','226.0254','700 C','[Rn]7s²','./img-test/76.jfif');">Ra</a></td>
+          <td align=center bgcolor="#BBFFFF"><a
+              href="javascript:display('Actinium','89','(227)','1050 C','[Rn]6d¹7s²','./img-test/77.jfif');">*Ac</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Rutherfordium','104','(260)','N/A C','[Rn]5f¹⁴6d²7s²','./img-test/78.jfif');">Rf</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Dubnium','105','(260)','N/A C','[Rn]5f¹⁴6d³7s²','./img-test/121.jfif');">Db</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Seaborgium','106','(263)','N/A C','[Rn]5f¹⁴6d⁴7s²','./img-test/80.jfif');">Sg</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Bohrium','107','(262)','N/A C','[Rn]5f¹⁴6d⁵7s²','./img-test/81.jfif');">Bh</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Hassium', '108', '(265)', ' N/A C','[Rn]5f¹⁴6d⁶7s²','./img-test/82.jfif');">Hs</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Meitnerium', '109', '(267)', ' N/A C','[Rn]5f¹⁴6d⁷7s²','./img-test/83.jfif');">Mt</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Darmstadtium', '109', '(267)', ' N/A C','[Rn]5f¹⁴6d⁹7s¹','./img-test/84.jfif');">Ds</a>
+          </td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Roentgenium', '109', '(267)', ' N/A C','[Rn]5f¹⁴6d¹⁰7s¹','./img-test/85.jfif');">Rg</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Copernium', '109', '(267)', ' N/A C','[Rn]5f¹⁴6d¹⁰7s²','./img-test/123.jfif');">Cn</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Nihonium', '109', '(267)', ' N/A C','[Rn]5f¹⁴6d¹⁰7s²7p¹','./img-test/87.jfif');">Nh</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Flerovium', '109', '(267)', ' N/A C','[Rn]5f¹⁴6d¹⁰7s²7p²','./img-test/88.jfif');">Fl</a>
+          </td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Moscovium', '109', '(267)', ' N/A C','[Rn]5f¹⁴6d¹⁰7s²7p³','./img-test/89.jfif');">Mc</a>
+          </td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Livermorium', '109', '(267)', ' N/A C','[Rn]5f¹⁴6d¹⁰7s²7p⁴','./img-test/90.jfif');">Lv</a>
+          </td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Tennessine', '109', '(267)', ' N/A C','[Rn]5f¹⁴6d¹⁰7s²7p⁵','./img-test/91.jfif');">Ts</a>
+          </td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Oganesson', '109', '(267)', ' ','[Rn]5f¹⁴6d¹⁰7s²7p⁶','./img-test/92.jfif');">Og</a></td>
+        <tr>
+          <td colspan="18"></td>
+          <td colspan="18"></td>
+          <td colspan="18"></td>
+        <tr>
+          <td colspan="4"></td>
+          <td ><strong>Họ Lantan</strong></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Cerium','58','140.12','795 C','[Xe]4f¹5d¹6s²','./img-test/93.jfif');">Ce</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Praseodymium','59','140.9077','935 C','[Xe]4f³6s²','./img-test/94.jfif','./amthanh/59.m4a');">Pr</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Neodymium','60','144.24','1010 C','[Xe]4f⁴6s²','./img-test/95.jfif');">Nd</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Promethium','61','(145)','N/A C','[Xe]4f⁵6s²','./img-test/96.jfif','./amthanh/61.m4a');">Pm</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Samarium','62','150.4','1072 C','[Xe]4f⁶6s²','./img-test/97.jfif');">Sm</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Europium','63','151.96','822 C','[Xe]4f⁷6s²','./img-test/98.jfif','./amthanh/63.m4a');">Eu</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Gadolinium','64','157.25','1311 C','[Xe]4f⁷5d¹6s²','./img-test/99.jfif');">Gd</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Terbium','65','158.9254','1360 C','[Xe]4f⁹6s²','./img-test/100.jfif','./amthanh/65.m4a');">Tb</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Dysprosium','66','162.50','1412 C','[Xe]4f¹⁰6s²','./img-test/101.jfif');">Dy</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Holmium','67','164.9304','1470 C','[Xe]4f¹¹6s²','./img-test/102.jfif','./amthanh/67.m4a');">Ho</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Erbium','68','167.26','1522 C','[Xe]4f¹²6s²','./img-test/103.jfif');">Er</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Thulium','69','168.9342','1545 C','[Xe]4f¹³6s²','./img-test/104.jfif','./amthanh/69.m4a');">Tm</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Ytterbium','70','173.04','824 C','[Xe]4f¹⁴6s²','./img-test/105.jfif');">Yb</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Lutetium','71','174.96','1656 C','[Xe]4f¹⁴5d¹6s²','./img-test/106.jfif','./amthanh/71.m4a');">Lu</a></td>
+        </tr>
+        <tr>
+          <td colspan="4"></td>
+          <td><strong>Họ Actini</strong></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Thorium','90','232.0381','1750 C','[Rn]6d²7s²','./img-test/107.jfif');">Th</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Proactinium','91','231.0359','1600 C','[Rn]5f²6d¹7s²','./img-test/108.jfif','./amthanh/91.m4a');">Pa</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Uranium','92','238.029','1132 C','[Rn]5f³6d¹7s²','./img-test/109.jfif');">U</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Neptunium','93','237.0482','640 C','[Rn]5f⁴6d¹7s²','./img-test/110.jfif','./amthanh/93.m4a');">Np</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Plutonium','94','(244)','639.5±2 C','[Rn]5f⁶7s²','./img-test/111.jfif');">Pu</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Americium','95','(243)','994 C','[Rn]5f⁷7s²','./img-test/112.jfif','./amthanh/95.m4a');">Am</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Curium','96','(247)','1340 C','[Rn]5f⁷6d¹7s²','./img-test/113.jfif');">Cm</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Berkelium','97','(247)','N/A C','[Rn]5f⁹7s²','./img-test/114.jfif','./amthanh/97.m4a');">Bk</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Californium','98','(251)','N/A C','[Rn]5f¹⁰7s²','./img-test/115.jfif');">Cf</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Einsteinium','99','(254)','N/A C','[Rn]5f¹¹7s²','./img-test/116.jfif','./amthanh/99.m4a');">Es</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Fremium','100','(257)','N/A C','[Rn]5f¹²7s²','./img-test/117.jfif');">Fm</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Mendelevium','101','(258)','N/A C','[Rn]5f¹³7s²','./img-test/118.jfif','./amthanh/101.m4a');">Md</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Nobelium','102','(259)','N/A C','[Rn]5f¹⁴7s²','./img-test/119.jfif');">No</a></td>
+          <td align=center bgcolor="#5F9EA0"><a
+              href="javascript:display('Lawrencium','103','(260)','N/A C','[Rn]5f¹⁴7s²7p¹','./img-test/120.jfif','./amthanh/103.m4a');">Lr</a></td>
+        </tr>
+      </table>
+    </form>
+    <form name="table">
+      <table width="500">
+        <tr>
+        <tr>
+            <tr></tr>
+          <td align="center" width="33%">Tên Nguyên Tố</td>
+          <td align="center" width="33%">Số Nguyên Tố</td>
+          <td align="center" width="33%">Cân Nặng</td>
+        </tr>
+        <tr>
+          <td align="center" width="33%"><input type="text" name="name" value=" " size="20"></td>
+          <td align="center" width="33%"><input type="text" name="number" value=" " size="5"></td>
+          <td align="center" width="33%"><input type="text" name="weight" value=" " size="10"></td>
+
+        </tr>
+        <tr>
+          <td align="center" width="33%">Hình ảnh</td>
+          <td align="center" width="33%">Cấu tạo</td>
+          <td align="center" width="33%">Âm thanh</td>
+        </tr>
+        <tr>
+          <td align="center" width="33%" style="height: 100px;">
+            <a href="" id="linkToWeb" target="_blank">
+                <img
+              style="width: 100%; height: 100%; object-fit: cover;" src="" alt="" id="img">
+            </a>
+          </td>
+          <td align="center" width="33%"><input type="text" name="height" value=" " size="10"></td>
+          <td align="center" width="33%"><audio autoplay controls id="audio" src=""></audio></td>
+        </tr>
+        <tr>
+        <tr>
+
+        <tr>
+        <tr>
+        <tr>
+        <tr>
+        <tr>
+        <tr>
+        <tr>
+        </tr>
+      </table>
+    </form>
+  </center>
+</body>
+
+</html>
